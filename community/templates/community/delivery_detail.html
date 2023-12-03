@@ -13,11 +13,11 @@
     }
 
     .button-container button {
-        margin-top: 5px; /* 수정하기 버튼과 삭제 버튼 간격 조절 */
+        margin-top: 5px;
     }
 
     .button-container .btn-primary {
-        padding: 8px 15px; /* 수정하기 버튼 크기 조절 */
+        padding: 8px 15px;
     }
 
 </style>
@@ -91,11 +91,6 @@
 <div>
     {% if post.author == user %}
     <a href="{% url 'community:edit-delivery' pk=post.pk %}" class="btn btn-primary text-white">수정하기</a>
-    <!--
-        <a href="{% url 'community:edit-delivery' pk=post.pk %}" class="btn btn-lg btn-primary">
-            <button type="button" class="text-white">수정하기</button>
-        </a>
-        -->
     {% endif %}
 </div>
 </div>
