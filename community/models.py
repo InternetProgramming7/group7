@@ -21,8 +21,8 @@ class CommentDelivery(models.Model):
 
 class Post(models.Model):
     CATEGORY_CHOICES=[
-        ('혼밥싫어','Food'),
-        ('같이 배달시켜요','Delivery'),
+        ('혼밥싫어','혼밥싫어'),
+        ('같이 배달시켜요','같이 배달시켜요'),
     ]
 
     title = models.CharField(max_length=30)
@@ -42,7 +42,7 @@ class Post(models.Model):
 
 class Delivery(models.Model):
     CATEGORY_CHOICES=[
-        ('생필품','Daily'),
+        ('생필품','생필품'),
         ('OTT','OTT'),
     ]
 
