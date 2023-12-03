@@ -12,7 +12,7 @@
         display:none;
     }
     .chat-container {
-        /*width: 100%;*/
+        width: 100%;
         height: 700px;
         margin: 0 auto;
         padding: 20px;
@@ -97,29 +97,10 @@
             type="text"
             class="input-field"
             id="dynamic-input-field"
-            oninput="updateChatContainerSize(this)"
+     
         />
         <button type="submit" class="send-button">Send</button>
     </form>
 
-    <script>
-        // 페이지 로딩 시 자동으로 입력창에 포커스 설정
-        window.onload = function() {
-            document.getElementById('dynamic-input-field').focus();
-            updateChatContainerSize(document.getElementById('dynamic-input-field'));
-        };
-
-        window.addEventListener('resize', function() {
-            updateChatContainerSize(document.getElementById('dynamic-input-field'));
-        });
-
-        function updateChatContainerSize(input) {
-            var messageContainer = document.getElementById('message-container');
-            messageContainer.scrollTop = messageContainer.scrollHeight;
-
-            // 항상 채팅 입력창이 보이도록 처리
-            input.scrollIntoView();
-        }
-    </script>
 </div>
 {% endblock %}
