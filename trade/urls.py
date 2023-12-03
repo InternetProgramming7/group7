@@ -12,7 +12,6 @@ urlpatterns=[
     path('<int:pk>/delete/', views.delete_post, name='delete_post'),
     path('<int:post_id>/chat/<int:chatroom_id>', views.into_chatroom, name='chating'),
     path('<int:post_id>/go-chat/',views.chat, name='go-chat'),
-    path('seller-chat/',views.seller_chat, name="seller-chat"),
     path('<int:pk>/chat/', views.chat, name='chat'),
     path('<int:pk>/like/', views.like_post, name='like_post'),
     path('liked/', views.liked_posts, name='liked_posts'),
