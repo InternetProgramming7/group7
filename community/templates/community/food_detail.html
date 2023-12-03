@@ -14,11 +14,11 @@
     }
 
     .button-container button {
-        margin-top: 5px; /* 수정하기 버튼과 삭제 버튼 간격 조절 */
+        margin-top: 5px;
     }
 
     .button-container .btn-primary {
-        padding: 8px 15px; /* 수정하기 버튼 크기 조절 */
+        padding: 8px 15px;
     }
 
 </style>
@@ -29,7 +29,7 @@
     {% if post.head_image %}
       <img src="{{ post.head_image.url }}" class="card-img-top">
     {% else %}
-      <img src=".." class="card-img-top">
+      <img src="" class="card-img-top">
     {% endif %}
     <div class="card-body">
       <h4 class="card-title">{{ post.title }}</h4>
@@ -100,7 +100,7 @@
 
 <!--Edit Post-->
 <div>
-    {% if post.author == user %}
+    {% if request.user == post.author and not editing %}
     <a href="{% url 'community:edit-post' pk=post.pk %}" class="btn btn-primary text-white">수정하기</a>
     {% endif %}
 </div>

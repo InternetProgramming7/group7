@@ -98,7 +98,9 @@ def edit_post(request, pk):
     if request.method == 'POST':
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
-            form.save()
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
             return redirect('community:food-detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
@@ -114,7 +116,9 @@ def edit_delivery(request, pk):
     if request.method == 'POST':
         delivery_form = PostDelivery(request.POST, instance=post)
         if delivery_form.is_valid():
-            delivery_form.save()
+            post = delivery_form.save(commit=False)
+            post.author = request.user
+            post.save()
             return redirect('community:delivery-detail', pk=post.pk)
     else:
         delivery_form = PostDelivery(instance=post, user=request.user)
@@ -122,19 +126,15 @@ def edit_delivery(request, pk):
     return render(request, 'community/edit_delivery.html', {'delivery_form': delivery_form, 'post':post})
 
 
-def food_detail(request, pk):
+def food_detail(request, pk, editing=None):
     post = get_object_or_404(Post, pk=pk)
     comments=Comment.objects.filter(post=post)
-    return render(request, 'community/food_detail.html', {'post': post,'comments':comments})
+    return render(request, 'community/food_detail.html', {'post': post,'comments':comments, 'editing': editing})
 
 def delivery_detail(request,pk):
     post = get_object_or_404(Delivery, pk=pk)
     comments_delivery=CommentDelivery.objects.filter(post=post)
     return render(request, 'community/delivery_detail.html',{'post': post,'comments_delivery':comments_delivery})
-'''
-def ott(request):
-    return render(request, 'community/ott.html')
-'''
 
 def search(request):
     query=request.GET.get('q')
