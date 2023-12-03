@@ -48,8 +48,8 @@ def edit_post(request, pk):
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             allowed_reviewer_text = form.cleaned_data.get('allowed_reviewer_text')
-            post.allowed_reviewer = User.objects.filter(nickname=allowed_reviewer_text).first()
-
+            # admin(슈퍼유저) 계정이 nickname이 없어서 admin은 제외하도록 필터링함 
+            post.allowed_reviewer=User.objects.filter(nickname=allowed_reviewer_text).exclude(nickname='admin').first()
             form.save()
             return redirect('trade:trade_detail', pk=pk)
     else:
