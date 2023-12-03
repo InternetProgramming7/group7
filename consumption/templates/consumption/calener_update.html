@@ -41,7 +41,7 @@
         
         <span class="input-group-text"><i class="bi bi-calendar"> 날짜입력 </i></span>
       </div>
-    <input name="full_date"  value="{{record.month}}/{{record.date}}/{{record.year}}" type="text" class="form-control" id="datepicker" placeholder="날짜 선택">
+      <input name="full_date" value="{{ record.month }}/{{ record.date|stringformat:'02d' }}/{{ record.year }}" type="text" class="form-control" id="datepicker" placeholder="날짜 선택">
     
   </div>
   <div class="input-group my-3">

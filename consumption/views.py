@@ -14,6 +14,8 @@ d=[n for n in range(1,32)] # 1~31 day
 def parseTime(date): 
     m=date[0:2]
     d=date[3:5]
+    if len(d)==1:
+        d="0"+d
     y=date[6:10]
     return y,m,d
 
