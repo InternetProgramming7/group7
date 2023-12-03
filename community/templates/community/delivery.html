@@ -2,11 +2,23 @@
 {% block title %}공동구매해요{% endblock %}
 {% block content %}
 <a href="{% url 'community:community-main' %}"><button type="button" class="btn-close m-2" aria-label="Close"></button></a>
+
+<nav class="mx-5 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-nav  mx-5 ">
+        <a class="nav-link" href="{% url 'community:category-delivery' category_delivery='생필품' %}" style="font-size: 16px;" id="daily">생필품</a>
+    </div>
+
+    <div class="navbar-nav  mx-5 ">
+        <a class="nav-link" href="{% url 'community:category-delivery' category_delivery='OTT' %}" style="font-size: 16px;" id="ott">OTT</a>
+    </div>
+</nav>
+
+<!--
 <div>
 <a href="{% url 'community:category-delivery' category_delivery='daily' %}"><button type="button" class="btn btn-lg btn-primary" >생필품</button></a>
 <a href="{% url 'community:category-delivery' category_delivery='ott' %}"><button type="button" class="btn btn-lg btn-primary" >OTT</button></a>
 </div>
-
+-->
 <hr>
 
 <!-- Search Widget -->

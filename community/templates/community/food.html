@@ -4,10 +4,22 @@
 
 <a href="{% url 'community:community-main' %}"><button type="button" class="btn-close m-2" aria-label="Close"></button></a>
 
+<nav class="mx-5 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-nav  mx-5 ">
+        <a class="nav-link" href="{% url 'community:category-posts' category='혼밥싫어' %}" style="font-size: 16px;" id="food">혼밥싫어</a>
+    </div>
+
+    <div class="navbar-nav  mx-5 ">
+        <a class="nav-link" href="{% url 'community:category-posts' category='같이 배달시켜요' %}" style="font-size: 16px;" id="delivery">같이 배달시켜요</a>
+    </div>
+</nav>
+
+<!--
 <div>
 <a href="{% url 'community:category-posts' category='food' %}"><button type="button" class="btn btn-lg btn-primary" >혼밥 싫어</button></a>
 <a href="{% url 'community:category-posts' category='delivery' %}"><button type="button" class="btn btn-lg btn-primary" >같이 배달시켜요</button></a>
 </div>
+-->
 
 <hr>
 

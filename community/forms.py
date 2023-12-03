@@ -30,7 +30,6 @@ class PostDelivery(forms.ModelForm):
         model=Delivery
         fields=['title', 'content','head_image','file_upload','category_delivery','author']
 
-
     def __init__(self, *args, **kwargs):
         user=kwargs.pop('user',None)
         super(PostDelivery, self).__init__(*args, **kwargs)
@@ -38,4 +37,3 @@ class PostDelivery(forms.ModelForm):
         if user:
             self.fields['author'].initial = user
             self.fields['author'].widget = forms.HiddenInput()
-
