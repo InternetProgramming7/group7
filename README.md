@@ -1,6 +1,8 @@
 
 # 알찬소<br>
-## 알찬 소비를 나누는 소비자 커뮤니티
+## 알찬 소비를 나누는 소비자 커뮤니티  
+### [알찬소 바로가기](http://3.36.216.35:8000/)
+
 
 <br><br><br>
 # 😎 개발팀원 소개 
@@ -21,24 +23,7 @@
 #### 1️⃣ 로그인 & 회원가입 <br>
 
 <img width="200" height="420"  src="https://github.com/InternetProgramming7/group7/assets/128278212/f5cb9956-dcf4-4ac9-a595-f5c2bfefb92e">
-<img width="200" height="420"  src="https://github.com/InternetProgramming7/group7/assets/128278212/ed0522df-c1a6-4174-a91e-2c40acca154c">
-<img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/128278212/ce241611-a22c-42af-999b-65ada90b9ad4">
-
-
-#### 2️⃣ 금융 기록 <br>
-
-<img width="200" height="420" alt="image" src="https://github.com/InternetProgramming7/group7/assets/128278212/83a6e064-e8e0-4587-b3ea-94bed39e0041">
-<img width="200" height="420" alt="image" src="https://github.com/InternetProgramming7/group7/assets/128278212/d92f4c69-69ba-4568-aef6-0d97c1d51747">
-<img width="200" height="420" alt="image" src="https://github.com/InternetProgramming7/group7/assets/128278212/06ef1a06-0132-4da9-8ca5-8d29f5f2e04c">
-<img width="200" height="420" alt="image" src="https://github.com/InternetProgramming7/group7/assets/128278212/b093826c-72e2-4474-8c9b-0c90973510b2">
-
-<br> 
-
-  - 금융 기록을 작성, 조회, 수정, 삭제하며 자신의 소비 기록을 남길 수 있다
-  - 금융 기록을 작성할 때 공개를 해제하면 다른 사용자들에게 해당 기록은 보이지 않는다
-  - 사용자의 닉네임, 혹은 아이디를 검색해서 사용자 간 팔로우, 언팔로우를 한다
-  - 팔로잉한 사람들에 한해 다른 사용자들의 소비 기록을 보며 좋아요를 남길 수 있다
-  - 자신의 소비를 기반으로 카테고리별 월별 소비 통계를 그래프르 확인할 수 있다
+<img width="200" height="420"  src="https://github.com/Intern로 확인할 수 있다
 
 
 #### 3️⃣ 제휴 정보 확인
