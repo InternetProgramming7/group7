@@ -140,13 +140,13 @@ def search(request):
     query=request.GET.get('q')
 
     if query:
-        posts=Post.objects.filter(title__icontains=query)
+        posts = Post.objects.filter(title__icontains=query)
     else:
         if query:
             posts = Post.objects.filter(content__icontains=query)
         else:
             posts = []
-    return render(request,'community/search_results.html',{'posts':posts, 'query':query})
+    return render(request,'community/search_results.html',{'posts' : posts, 'query' : query})
 
 def search_delivery(request):
     query=request.GET.get('q')

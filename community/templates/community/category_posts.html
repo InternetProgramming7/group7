@@ -4,7 +4,16 @@
 {% block content %}
 <a href="{% url 'community:food' %}"><button type="button" class="btn-close m-2" aria-label="Close"></button></a>
   <div class="container">
-    <h2>{{ category }} 카테고리 게시글</h2>
+<nav class="mx-5 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-nav  mx-5 ">
+        <a class="nav-link" href="{% url 'community:category-posts' category='혼밥싫어' %}" style="font-size: 16px;" id="food">혼밥싫어</a>
+    </div>
+
+    <div class="navbar-nav  mx-5 ">
+        <a class="nav-link" href="{% url 'community:category-posts' category='같이 배달시켜요' %}" style="font-size: 16px;" id="delivery">같이 배달시켜요</a>
+    </div>
+</nav>
+    <h2>"{{ category }}" 카테고리 게시글</h2>
     <hr>
     <div class="row justify-content-center">
       {% for post in posts %}
