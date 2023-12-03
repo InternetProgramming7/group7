@@ -3,7 +3,25 @@
 {% block title %}채팅방{% endblock %}
 
 {% block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+    @media screen and (max-width: 600px) {
+    .chat-container {
+        height: auto;
+    }
+
+    .message-container {
+        height: auto;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+}
+
+
+
     .container-xl{
         height:10px;
     }
@@ -11,7 +29,7 @@
         display:none;
     }
     .chat-container {
-        width: 100%;
+        /*width: 100%;*/
         height: 700px;
         margin: 0 auto;
         padding: 20px;
