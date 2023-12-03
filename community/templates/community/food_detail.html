@@ -102,11 +102,6 @@
 <div>
     {% if post.author == user %}
     <a href="{% url 'community:edit-post' pk=post.pk %}" class="btn btn-primary text-white">수정하기</a>
-    <!--
-        <a href="{% url 'community:edit-post' pk=post.pk %}" class="btn btn-primary">
-            <button type="submit" class="btn btn-lg btn-primary">수정하기</button>
-        </a>
-        -->
     {% endif %}
 </div>
 </div>

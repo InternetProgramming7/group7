@@ -13,15 +13,9 @@
     </div>
 </nav>
 
-<!--
-<div>
-<a href="{% url 'community:category-delivery' category_delivery='daily' %}"><button type="button" class="btn btn-lg btn-primary" >생필품</button></a>
-<a href="{% url 'community:category-delivery' category_delivery='ott' %}"><button type="button" class="btn btn-lg btn-primary" >OTT</button></a>
-</div>
--->
 <hr>
 
-<!-- Search Widget -->
+<!-- Search -->
   <div class="container-fluid">
     <form class="d-flex" method="get" action="{% url 'community:search-delivery' %}">
       <input class="form-control me-2" type="text" name="q" class="form-control" placeholder="Search for...">
@@ -42,11 +36,6 @@
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="card-text" style="font-size: 14px">{{ post.content }}</p>
             <a href="{% url 'community:delivery-detail' pk=post.pk %}" class="btn btn-primary">Read More</a>
-            <!--
-            <a href="{% url 'community:delivery-detail' pk=post.pk %}" class="btn btn-primary">
-              <button type="submit" class="btn-btn-lg btn-primary">Read More</button>
-            </a>
-            -->
             <p class="text-right" style="font-size: 10px">{{ post.created_at }}</p>
           </div>
         </div>
