@@ -59,12 +59,12 @@
 
     .input-container {
         display: flex;
-        width:100px;
+        width:200px;
     }
 
     .input-field {
         flex: 1;
-        width:100px;
+        /*width:1200px;*/
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -87,7 +87,7 @@
             <div class="message {% if request.user == c.writer %}sender{% else %}receiver{% endif %}">
                 <div>
                     {{ c.text }}<br>
-                    <small style="margin:0px; font-size: 10px;">작성자 : {{ c.writer.username }} - {{ c.created_at }}</small>
+                    <small style="margin:0px; font-size: 10px;">writer-{{ c.writer.username }} - {{ c.created_at|date:"Y년 m월 d일 H:i" }}</small>
                 </div>
             </div>
         {% endfor %}
