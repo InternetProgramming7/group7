@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def map(request):
+def main(request):
     return render(request, 'main/main.html')

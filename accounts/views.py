@@ -44,6 +44,7 @@ def review_make(request):
     posts=Post.objects.filter(allowed_reviewer=request.user).order_by('-id')
     return render(request, 'accounts/review_list.html',{'posts':posts})
 
+# 유저 정보 수정
 def update_userinfo(request):
     if request.method=="POST":
         nickname=request.POST.get('nickname')
@@ -58,6 +59,7 @@ def update_userinfo(request):
         return redirect('accounts:mypage')
     return render(request, 'accounts/update_userinfo.html')
 
+# 혜택1 스크랩
 def benefit_scrap(request):
     benefits=request.user.scrap_benefits.all()
     context = {
@@ -65,6 +67,7 @@ def benefit_scrap(request):
     }
     return render(request, 'accounts/benefit_scrap.html', context)
 
+# 혜택 2 스크랩
 def map_scrap(request):
     maps=request.user.map_benefits.all()
     context={

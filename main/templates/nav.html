@@ -16,15 +16,15 @@
                 </li>
                  <!-- 커뮤니티 -->
                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'community:community-main' %}">Community</a>
+                    <a class="nav-link" href="{% url 'community:community-main' %}">커뮤티니</a>
                 </li>
                 <!--금융관리-->
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'consumption:consumption' request.user.nickname %}">금융관리</a>
+                    <a class="nav-link" href="{% url 'consumption:consumption' request.user.nickname %}">금융기록</a>
                 </li>
                 <!--중고거래-->
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'trade:trade' %}">Trade</a>
+                    <a class="nav-link" href="{% url 'trade:trade' %}">중고거래</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
@@ -37,7 +37,7 @@
                 {% endif %}
                 <!--지도-->
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'map:map-benefit' %}">Benefit</a>
+                    <a class="nav-link" href="{% url 'map:map-benefit' %}">제휴혜택</a>
                 </li>
 
 

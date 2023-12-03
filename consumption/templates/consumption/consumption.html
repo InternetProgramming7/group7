@@ -3,12 +3,14 @@
 {% block title %}금융관리{% endblock %}
 
 {% block content %}
+    <!--다른 사람의 굼융 기록을 보고 있는 경우-->
     {% if nickname != request.user.nickname %}
         <a style="text-decoration:none;" href="{% url 'consumption:friend' %}">
             <button type="button" class="btn-close my-2" aria-label="Close"></button>
         </a>
         <span style="color : steelblue;">{{nickname}}</span>님의 기록입니다
     {% else %}
+     <!--내 기록인 경우-->
         {% include 'consumption/consumption_nav.html' %}
         <script>
             let nav=document.getElementById("bank");
