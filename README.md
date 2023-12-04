@@ -80,10 +80,15 @@
 #### 5️⃣ 커뮤니티  
 
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/ccf92ee1-7696-4477-b822-532e21c9f005">
+<img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/5af857ed-b18b-4fc6-b035-e05fe2c64f69">
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/24092374-ba40-437b-be87-a56f78742acd">
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/55144311-42a8-4bd3-8bfc-207a13ca37f3">
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/dbcd7358-3342-4d09-a0f6-f3fde0f58c1e">
-  - 같이 배달시킬 사람, 여가생활이나 생필품 공동구매 카테고리로 분류된다
+
+<br>
+
+  - 같이 배달시킬 사람과 밥 같이 먹을 사람, 여가생활이나 생필품 공동구매 카테고리로 분류된다
+  - 같은 카테고리를 가진 게시글들만 모아서 볼 수 있다.
   - 글 작성, 수정, 삭제가 가능하며 댓글을 남길 수 있다
   - 상단에 검색바를 두어 검색어를 입력하여 자신이 원하는 글을 검색할 수 있다.
 
