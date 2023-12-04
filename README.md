@@ -61,6 +61,9 @@
 #### 4️⃣ 중고 거래
 
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/128278212/78ae4fb7-5c53-4369-b4e4-d72059611279">
+<img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/145529654/f23da07d-2fb6-4963-b545-17e0258adcc1">
+<img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/145529654/984e13df-ea6e-4585-8169-43aeb9b683b8">
+<img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/145529654/999b7d80-7d00-40ca-a45a-29f78055806a">
  <br> 
 
   - 중고 상품을 올리고 수정 삭제할 수 있다
