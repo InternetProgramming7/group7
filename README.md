@@ -79,7 +79,6 @@
 
 #### 5️⃣ 커뮤니티  
 
-<img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/ccf92ee1-7696-4477-b822-532e21c9f005">
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/5af857ed-b18b-4fc6-b035-e05fe2c64f69">
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/24092374-ba40-437b-be87-a56f78742acd">
 <img width="200" height="420"  alt="image" src="https://github.com/InternetProgramming7/group7/assets/90364750/55144311-42a8-4bd3-8bfc-207a13ca37f3">
