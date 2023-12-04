@@ -6,7 +6,7 @@ from datetime import date
 def map_benefit_list(request):
     today = date.today()
     benefits = Benefit.objects.filter(deadline__gte=today).order_by('deadline') # 날짜가 지난 데이터들은 불러오지 않음 deadline>today
-    maps=Map.objects.all()
+    maps=Map.objects.filter(deadline__gte=today).order_by('deadline')
     context={'benefits':benefits, 'maps':maps}
     return render(request, 'map/map_benefit.html',context)
 
