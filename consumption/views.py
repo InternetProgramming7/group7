@@ -108,7 +108,7 @@ def calender_update(request, id):
         record.save()
         return redirect('consumption:consumption', request.user.nickname)
     else:
-        return render(request, 'consumption/calener_update.html',{"record":record})
+        return render(request, 'consumption/calender_update.html',{"record":record})
 
 # 금융 기록 작성
 def calender(request):
