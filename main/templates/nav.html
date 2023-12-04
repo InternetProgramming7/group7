@@ -26,6 +26,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'trade:trade' %}">중고거래</a>
                 </li>
+                <!--지도-->
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'map:map-benefit' %}">제휴혜택</a>
+                </li>
+
                 {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'accounts:login' %}">로그인</a>
@@ -35,10 +40,6 @@
                     <a class="nav-link" href="{% url 'accounts:signup' %}">회원가입</a>
                 </li>
                 {% endif %}
-                <!--지도-->
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'map:map-benefit' %}">제휴혜택</a>
-                </li>
 
 
         </div>
