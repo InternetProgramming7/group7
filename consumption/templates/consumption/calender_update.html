@@ -13,7 +13,7 @@
         width: 100%;
         background-color: #f8f9fa;
         font-size: 20px;
-        font-family: 'Gowun Dodum', sans-serif; 
+        font-family: 'Gowun Dodum', sans-serif;
     }
 
     .container {
@@ -24,10 +24,10 @@
         padding-left: 0;
     }
       </style>
-      
+
 </head>
 <body>
-  
+
   <div class="container-xl mt-5">
     <!--취소버튼-->
     <a href="{% url 'consumption:consumption' request.user.nickname %}"><button type="button" class="btn-close mb-5" aria-label="Close"></button></a>
@@ -35,14 +35,14 @@
     <form action="" method="POST">
 
     {% csrf_token %}
-  
+
   <div class="input-group date my-3">
     <div class="input-group-append">
-        
+
         <span class="input-group-text"><i class="bi bi-calendar"> 날짜입력 </i></span>
       </div>
-    <input name="full_date" value="{{ record.month|stringformat:'02d' }}/{{ record.date|stringformat:'02d' }}/{{ record.year }}" type="text" class="form-control" id="datepicker" placeholder="날짜 선택">
-    
+      <input name="full_date" value="{{ record.month|stringformat:'02d' }}/{{ record.date|stringformat:'02d' }}/{{ record.year }}" type="text" class="form-control" id="datepicker" placeholder="날짜 선택">
+
   </div>
   <div class="input-group my-3">
     <span  class="input-group-text"> 소비금액(원) </span>
@@ -65,17 +65,19 @@
 
   <div class="input-group my-3">
     <span class="input-group-text"> 카테고리 </span>
-    <select name="category"  value="{{record.category}}"  class="form-select" aria-label="Default select example">
 
-        <option value="음식">음식</option>
-        <option value="생필품">생필품</option>
-        <option value="여가">여가</option>
-        <option value="교통">교통</option>
-        <option value="학습">학습</option>
-        <option value="기타">기타</option>
-        
+      <select name="category" class="form-select" aria-label="Default select example">
+        <option value="음식" {% if record.category == '음식' %}selected{% endif %}>음식</option>
+        <option value="생필품" {% if record.category == '생필품' %}selected{% endif %}>생필품</option>
+        <option value="여가" {% if record.category == '여가' %}selected{% endif %}>여가</option>
+        <option value="교통" {% if record.category == '교통' %}selected{% endif %}>교통</option>
+        <option value="학습" {% if record.category == '학습' %}selected{% endif %}>학습</option>
+        <option value="기타" {% if record.category == '기타' %}selected{% endif %}>기타</option>
     </select>
-    </div>
+
+
+
+</div>
     <div  class="form-check my-3">
       {% if record.share %}
         공개<input  class="form-check-input" type="checkbox" value="True" name="share" id="flexCheckChecked" checked>
@@ -86,7 +88,7 @@
     <div class="my-5">
       <button type="submit" class="btn btn-primary mx-auto d-block">기록하기</button>
     </div>
- </div>
+</div>
 </form>
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
