@@ -104,28 +104,6 @@
 - 프론트엔드 : Bootstap, Kakao map API
 
 
-### ✨ 폴더 구조<br>
-
-
-  ```
-  📂 
-  └─ aalchanso
-   ├─ my_project
-   │  ├─ __init__.py
-   │  ├─ asgi.py
-   │  ├─ settings.py
-   │  ├─ urls.py
-   │  └─ wsgi.py
-   ├─ myapp/
-   │  ├─ __init__.py
-   │  ├─ admin.py
-   │  ├─ apps.py
-   │  ├─ models.py
-   │  ├─ tests.py
-   │  └─ views.py
-   └─ manage.py
-  ```
-
 ### ✨ 개발환경에서의 실행 방법<br>
   ```
   $ cd group7
