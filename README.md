@@ -1,10 +1,16 @@
 
+<img  src="https://github.com/InternetProgramming7/group7/assets/128278212/3471d844-72b8-41cc-893b-5e5c5bc20d84">
+
+
 # 알찬소<br>
 ## 알찬 소비를 나누는 소비자 커뮤니티  
 ### [알찬소 바로가기](http://3.36.216.35:8000/)
+
 접속이 안 된다면
   - http로 접근했는지 확인(https x)
   - 모바일 접속 권장
+
+
 
 
 <br><br><br>
